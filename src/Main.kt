@@ -22,6 +22,14 @@ fun main() {
     x = "valor null safety inicializado"
 
     println(x)
+
+
+    //cambio de tipo de datos
+
+    val num1 = 5
+    val num2 = "10"
+    var res = num1 + num2.toInt()
+    println(res)
 }
 
 /*
@@ -34,5 +42,7 @@ fun main() {
 
     null safety
     var x : String?  // puede ser que tenga o que no tenga un valor
+
+    cambio de tipo de datos
 
  */
