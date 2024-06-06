@@ -30,6 +30,7 @@ fun main() {
     val num2 = "10"
     var res = num1 + num2.toInt()
     println(res)
+    println("Soy el numero: $num1")
 }
 
 /*
