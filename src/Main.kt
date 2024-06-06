@@ -10,6 +10,18 @@ fun main() {
     println(v1)
 
     val constante : String = "Esto es una constante"
+
+    var x : String? = null
+
+    x?.let {
+        println("x tiene valor")
+    } // permite saber si es null o no. Si es null no va a ingresar
+
+    println("valor null safety")
+
+    x = "valor null safety inicializado"
+
+    println(x)
 }
 
 /*
@@ -19,4 +31,8 @@ fun main() {
     Float
     Boolean
     las constantes se declaran con val
+
+    null safety
+    var x : String?  // puede ser que tenga o que no tenga un valor
+
  */
