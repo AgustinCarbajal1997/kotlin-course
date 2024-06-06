@@ -1,8 +1,22 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+    var v1 : String = "Hola"
+
+    println(v1)
+
+    v1 = "Chau"
+
+    println(v1)
+
+    val constante : String = "Esto es una constante"
 }
+
+/*
+    String
+    Int
+    Double
+    Float
+    Boolean
+    las constantes se declaran con val
+ */
