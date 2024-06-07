@@ -33,17 +33,25 @@ fun main() {
     println("Soy el numero: $num1")
 
     // try catch
-    try {
-        println("Escribe el primer valor")
-        val n1 = readln().toInt()
-        println("Escribe el segundo valor")
-        val n2 = readln().toInt()
-        val res = n1 + n2
-        println(res)
-    } catch ( e: NumberFormatException) {
-        println("Error: escribe un numero valido")
-    }
+//    try {
+//        println("Escribe el primer valor")
+//        val n1 = readln().toInt()
+//        println("Escribe el segundo valor")
+//        val n2 = readln().toInt()
+//        val res = n1 + n2
+//        println(res)
+//    } catch ( e: NumberFormatException) {
+//        println("Error: escribe un numero valido")
+//    }
 
+    var array = arrayOf("agustin", "claudio", "miguel")
+    println(array.contentToString())
+    println(array[1])
+    array[1] = "mario lopez"
+    println(array.contentToString())
+    println(array.size)
+    array += "gisela"
+    println(array.contentToString())
 }
 
 /*
@@ -58,5 +66,7 @@ fun main() {
     var x : String?  // puede ser que tenga o que no tenga un valor
 
     cambio de tipo de datos
+
+    arrays
 
  */
