@@ -44,6 +44,7 @@ fun main() {
 //        println("Error: escribe un numero valido")
 //    }
 
+    // arrays
     var array = arrayOf("agustin", "claudio", "miguel")
     println(array.contentToString())
     println(array[1])
@@ -52,6 +53,23 @@ fun main() {
     println(array.size)
     array += "gisela"
     println(array.contentToString())
+
+    var numbers = intArrayOf(2,2,5,7,8,8,3,5,6)
+    val duplicate = numbers.groupBy { it }.filter { it.value.size > 1 }.keys
+    println(duplicate)
+
+    // listas
+
+    val lista = listOf(1,2,3,4,5) // no modificable
+    println(lista)
+    println(lista[0])
+
+    val mutableList = mutableListOf(1,2,3,4,5) // modificable
+    mutableList.add(6)
+    mutableList.remove(1)
+    println(mutableList)
+
+    //bucle for
 }
 
 /*
@@ -68,5 +86,7 @@ fun main() {
     cambio de tipo de datos
 
     arrays
+
+    listas - mutables y no mutables
 
  */
