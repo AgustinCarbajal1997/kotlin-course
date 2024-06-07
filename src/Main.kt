@@ -70,6 +70,13 @@ fun main() {
     println(mutableList)
 
     //bucle for
+    for (i in 1..5) {
+        println(i)
+    }
+
+    for(element in lista) {
+        println(element)
+    }
 }
 
 /*
