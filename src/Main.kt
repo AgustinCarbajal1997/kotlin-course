@@ -31,6 +31,19 @@ fun main() {
     var res = num1 + num2.toInt()
     println(res)
     println("Soy el numero: $num1")
+
+    // try catch
+    try {
+        println("Escribe el primer valor")
+        val n1 = readln().toInt()
+        println("Escribe el segundo valor")
+        val n2 = readln().toInt()
+        val res = n1 + n2
+        println(res)
+    } catch ( e: NumberFormatException) {
+        println("Error: escribe un numero valido")
+    }
+
 }
 
 /*
