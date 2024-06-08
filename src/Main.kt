@@ -1,6 +1,11 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
+    cursoPrimeraParte()
+    cursoSegundaParte()
+}
+
+fun cursoPrimeraParte(){
     var v1 : String = "Hola"
 
     println(v1)
@@ -77,8 +82,55 @@ fun main() {
     for(element in lista) {
         println(element)
     }
+
+    val listanumeros = listOf("a","b","c","d","e")
+    listanumeros.forEach {
+        println(it)
+    }
+
+    // if block
+
+    val xx = true
+    if(xx) {
+        println("Es verdadero")
+    } else {
+        println("Es falso")
+    }
+
+    // switch no existe, se usa el when que es parecido
+
+    val dia = 1
+    when(dia){
+        1 -> println("Lunes")
+        2 -> println("Martes")
+        3 -> println("Miercoles")
+        else -> println("El numero no es valido")
+    }
 }
 
+fun cursoSegundaParte(){
+    suma(3,3)
+    val result = sum(3,3)
+    println("El resultado de la funcion lambda es $result")
+    val funcionRetorno = sumaReturn(3, 3)
+    println("El resultado de la funcion c/ retorno es $funcionRetorno")
+
+    val nombres = listOf("Agus", "Clau", "Miguel")
+    val nombresFiltrados = nombres.filter { it.contains("g") }
+    println(nombresFiltrados)
+}
+
+fun suma(v1: Int, v2: Int) {
+    val res = v1 + v2
+    println("El resultado es $res")
+}
+//funcion lambda
+val sum = { x: Int, y: Int -> x + y }
+// funcion con retorno
+fun sumaReturn(v1: Int, v2: Int): String {
+    val res = v1 + v2
+    return "El resultado es $res"
+}
 /*
     String
     Int
